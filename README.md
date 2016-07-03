@@ -1,9 +1,22 @@
 # Building the binary
 
+We are running the server on NixOS. You can also leave out the `nix-shell` call if running on Ubuntu.
+
 ```console
-$ nix-shell
+$ nix-shell # only on NixOS
 $ ant crypto
 $ ant jar
+```
+
+# Prerequirements
+
+* Install PostgreSQL
+* Configure passwords (?)
+
+# Running the server
+
+```console
+$ ant server
 ```
 
 # Clean audit
